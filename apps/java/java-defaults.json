@@ -1,0 +1,9 @@
+{ 
+  "category": "java",
+  "description": "Java Function app",
+  "incidentLink": "",
+  "deployment": {
+    "stack": "java",
+    "version": ["21"]
+    }
+}

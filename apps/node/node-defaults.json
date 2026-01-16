@@ -1,0 +1,9 @@
+{ 
+  "category": "node",
+  "description": "Node.js Function app",
+  "incidentLink": "",
+  "deployment": {
+    "stack": "node",
+    "version": ["24.x"]
+    }
+}

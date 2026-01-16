@@ -1,0 +1,9 @@
+{ 
+  "category": "python",
+  "description": "Python Function app",
+  "incidentLink": "",
+  "deployment": {
+    "stack": "python",
+    "version": ["3.13"]
+    }
+}

@@ -1,0 +1,25 @@
+[
+{
+  "trigger": {
+    "type": "http",
+    "route": "/api/httpTrigger",
+    "method": "GET",
+    "payload": null
+  },
+  "execution": {
+    "invocationCount": 5,
+    "concurrency": 1,
+    "timeoutSeconds": 30
+  },
+  "assertions": [
+    {
+      "type": "statusCode",
+      "expected": 200
+    },
+    {
+      "type": "responseContains",
+      "expected": "Hello, world!"
+    }
+  ]
+}
+]

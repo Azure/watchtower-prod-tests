@@ -1,0 +1,17 @@
+{ 
+  "appName": "hello-world-java21",
+  "category": "baseline", 
+  "description": "Basic HTTP trigger for Java 21",
+  "incidentLink": "",
+  "deployment": {
+    "stack": "java",
+    "version": ["21"],
+    "mechanism": ["zip-deploy"],
+    "stage": ["0"],
+    "os": ["linux"],
+    "sku": ["flex-consumption"],
+    "tags": {
+      "Owner": "victoriahall"
+    }
+  }
+}

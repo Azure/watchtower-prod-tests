@@ -1,0 +1,43 @@
+{ 
+  "deployment": {
+
+    "mechanism": ["zip-deploy"],
+    "stage": ["0"],
+    "os": ["linux"],
+    "sku": ["flex-consumption"],
+    "availabilityZonesEnabled": false,
+    "storage": {
+      "useAzureWebJobsStorage": true,
+      "accountSku": "Standard_LRS"
+    },
+    "observability": {
+      "appInsightsEnabled": true
+    },
+    "networking": {
+      "enablePublicAccess": true,
+      "vnetIntegration": false,
+      "vnetName": null,
+      "subnetName": null
+    },
+    "durableFunctions" : {
+        "enabledDTS": false
+    },
+    "authentication": {
+      "storage": {
+        "type": "connectionString",
+        "connectionNamePrefix": "AzureWebJobsStorage",
+        "useExistingIdentity": true
+    }
+  },
+    "flexConsumption": { 
+      "alwaysReady": { 
+        "enabled": false, 
+        "instanceCount": 1, 
+        "instanceSize": ["2048"] 
+      }, 
+      "scale": { 
+        "maxInstances": 1 
+      }
+    }
+}
+}
