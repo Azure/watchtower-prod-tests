@@ -1,0 +1,9 @@
+{ 
+  "category": "dotnet",
+  "description": "C# Function app",
+  "incidentLink": "",
+  "deployment": {
+    "stack": "dotnet",
+    "version": ["8"]
+    }
+}
